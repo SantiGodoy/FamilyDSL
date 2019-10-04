@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated family -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="es.uca.mps.santiago_godoy.family.presentation.FamilyModelWizardID"
+            name="%_UI_FamilyModelWizard_label"
+            class="es.uca.mps.santiago_godoy.family.presentation.FamilyModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/FamilyModelFile.gif">
+         <description>%_UI_FamilyModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated family -->
+      <editor
+            id="es.uca.mps.santiago_godoy.family.presentation.FamilyEditorID"
+            name="%_UI_FamilyEditor_label"
+            icon="icons/full/obj16/FamilyModelFile.gif"
+            extensions="family"
+            class="es.uca.mps.santiago_godoy.family.presentation.FamilyEditor"
+            contributorClass="es.uca.mps.santiago_godoy.family.presentation.FamilyActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

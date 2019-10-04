@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:family="http://www.uca.es/mps/SANTIAGO_GODOY/family" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis xmi:id="_FlWnUFQnEeizuq-Xw7YJOg" selectedViews="_1FytEFmWEeioUvXurqMZQQ" version="12.1.0.201708031200">
+    <semanticResources>Family.family</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_1FytEFmWEeioUvXurqMZQQ">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="__X15wFmYEeioUvXurqMZQQ" name="new Persons diagram" repPath="#__XX_sFmYEeioUvXurqMZQQ">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Persons%20diagram']"/>
+        <target xmi:type="family:Family" href="Family.family#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_V9q1IFmvEei9xo18MnYllg" name="Relations of Juaki" repPath="#_V8z5gFmvEei9xo18MnYllg">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Relationships%20diagram']"/>
+        <target xmi:type="family:Man" href="Family.family#//@members.0"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="__X0roFmYEeioUvXurqMZQQ" name="new Persons diagram" uid="__XX_sFmYEeioUvXurqMZQQ">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="__X0roVmYEeioUvXurqMZQQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="__X0rolmYEeioUvXurqMZQQ">
+        <computedStyleDescriptions xmi:type="style:WorkspaceImageDescription" xmi:id="_nf4WYFmpEei9xo18MnYllg" labelSize="12" showIcon="false" tooltipExpression="Esto es un tío" sizeComputationExpression="4" resizeKind="NSEW" workspacePath="/es.uca.mps.SANTIAGO_GODOY.family.edit/icons/full/obj16/Man.gif">
+          <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='blue']"/>
+        </computedStyleDescriptions>
+        <computedStyleDescriptions xmi:type="style:WorkspaceImageDescription" xmi:id="_r73ZgFmpEei9xo18MnYllg" labelSize="12" showIcon="false" tooltipExpression="Esto es una tía" sizeComputationExpression="4" resizeKind="NSEW" workspacePath="/es.uca.mps.SANTIAGO_GODOY.family.edit/icons/full/obj16/Woman.gif">
+          <borderColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+          <labelColor xmi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
+        </computedStyleDescriptions>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="__X2g0FmYEeioUvXurqMZQQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="__X2g0VmYEeioUvXurqMZQQ" type="Sirius" element="__X0roFmYEeioUvXurqMZQQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_w50EwFmqEei9xo18MnYllg" type="2001" element="_w5jmEFmqEei9xo18MnYllg">
+          <children xmi:type="notation:Node" xmi:id="_w5158FmqEei9xo18MnYllg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_w5158VmqEei9xo18MnYllg" x="-5" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_F6fGIF8lEeie_IrsR-T5FA" type="3005" element="_F59hsF8lEeie_IrsR-T5FA">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_F6fGIV8lEeie_IrsR-T5FA" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_F6fGIl8lEeie_IrsR-T5FA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_w50EwVmqEei9xo18MnYllg" fontColor="13606770" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w50EwlmqEei9xo18MnYllg" x="430" y="65" width="40" height="40"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_0cgIYFmqEei9xo18MnYllg" type="2001" element="_0cF4sFmqEei9xo18MnYllg">
+          <children xmi:type="notation:Node" xmi:id="_0ch9kFmqEei9xo18MnYllg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_0ch9kVmqEei9xo18MnYllg" x="-5" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_0coEMFmqEei9xo18MnYllg" type="3005" element="_0cHG0FmqEei9xo18MnYllg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_0coEMVmqEei9xo18MnYllg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0coEMlmqEei9xo18MnYllg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_0cgIYVmqEei9xo18MnYllg" fontColor="9145334" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0cgIYlmqEei9xo18MnYllg" x="250" y="65" width="40" height="40"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_0cjLsFmqEei9xo18MnYllg" type="2001" element="_0cHt4FmqEei9xo18MnYllg">
+          <children xmi:type="notation:Node" xmi:id="_0ckZ0FmqEei9xo18MnYllg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_0ckZ0VmqEei9xo18MnYllg" x="-5" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_0cpSUFmqEei9xo18MnYllg" type="3005" element="_0cI8AFmqEei9xo18MnYllg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_0cpSUVmqEei9xo18MnYllg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0cpSUlmqEei9xo18MnYllg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_0cjLsVmqEei9xo18MnYllg" fontName="Segoe UI" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0cjLslmqEei9xo18MnYllg" x="253" y="167" width="40" height="40"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_3s41oF89EeiFfdx6SXot_Q" type="2001" element="_3r_dwF89EeiFfdx6SXot_Q">
+          <children xmi:type="notation:Node" xmi:id="_3tLwkF89EeiFfdx6SXot_Q" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_3tLwkV89EeiFfdx6SXot_Q" x="-5" y="-21"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_6nKOYV89EeiFfdx6SXot_Q" type="3005" element="_6nKOYF89EeiFfdx6SXot_Q">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_6nKOYl89EeiFfdx6SXot_Q" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6nKOY189EeiFfdx6SXot_Q"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_3s41oV89EeiFfdx6SXot_Q" fontColor="13606770" fontName="Segoe UI" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_3s41ol89EeiFfdx6SXot_Q" x="430" y="175" width="40" height="40"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="__X2g0lmYEeioUvXurqMZQQ"/>
+        <edges xmi:type="notation:Edge" xmi:id="_0crukFmqEei9xo18MnYllg" type="4001" element="_0cKxMFmqEei9xo18MnYllg" source="_0cjLsFmqEei9xo18MnYllg" target="_w50EwFmqEei9xo18MnYllg">
+          <children xmi:type="notation:Node" xmi:id="_0csVoFmqEei9xo18MnYllg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0csVoVmqEei9xo18MnYllg" x="8" y="-12"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_0cs8sFmqEei9xo18MnYllg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0cs8sVmqEei9xo18MnYllg" x="-6" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_0cs8slmqEei9xo18MnYllg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0cs8s1mqEei9xo18MnYllg" x="-6" y="8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_0crukVmqEei9xo18MnYllg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_0cruklmqEei9xo18MnYllg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0cruk1mqEei9xo18MnYllg" points="[20, -12, -157, 90]$[157, -91, -20, 11]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0cuK0FmqEei9xo18MnYllg" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0cuK0VmqEei9xo18MnYllg" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_0cux4FmqEei9xo18MnYllg" type="4001" element="_0cN0gFmqEei9xo18MnYllg" source="_0cjLsFmqEei9xo18MnYllg" target="_0cgIYFmqEei9xo18MnYllg">
+          <children xmi:type="notation:Node" xmi:id="_0cvY8FmqEei9xo18MnYllg" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0cvY8VmqEei9xo18MnYllg" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_0cvY8lmqEei9xo18MnYllg" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0cvY81mqEei9xo18MnYllg" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_0cwAAFmqEei9xo18MnYllg" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0cwAAVmqEei9xo18MnYllg" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_0cux4VmqEei9xo18MnYllg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_0cux4lmqEei9xo18MnYllg" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0cux41mqEei9xo18MnYllg" points="[0, 0, 0, 60]$[0, -60, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0cwnEFmqEei9xo18MnYllg" id="(0.5,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0cwnEVmqEei9xo18MnYllg" id="(0.5,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_5jDtEF89EeiFfdx6SXot_Q" type="4001" element="_5inBIF89EeiFfdx6SXot_Q" source="_3s41oF89EeiFfdx6SXot_Q" target="_0cgIYFmqEei9xo18MnYllg">
+          <children xmi:type="notation:Node" xmi:id="_5jDtFF89EeiFfdx6SXot_Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5jDtFV89EeiFfdx6SXot_Q" x="1" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_5j9E8F89EeiFfdx6SXot_Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5j9E8V89EeiFfdx6SXot_Q" x="1" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_5j9E8l89EeiFfdx6SXot_Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5j9E8189EeiFfdx6SXot_Q" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_5jDtEV89EeiFfdx6SXot_Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_5jDtEl89EeiFfdx6SXot_Q" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_5jDtE189EeiFfdx6SXot_Q" points="[0, 0, 140, 105]$[-140, -105, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5kP_4F89EeiFfdx6SXot_Q" id="(0.0,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_5kP_4V89EeiFfdx6SXot_Q" id="(1.0,0.625)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_6nKOZF89EeiFfdx6SXot_Q" type="4001" element="_6nAdYF89EeiFfdx6SXot_Q" source="_3s41oF89EeiFfdx6SXot_Q" target="_w50EwFmqEei9xo18MnYllg">
+          <children xmi:type="notation:Node" xmi:id="_6nKOaF89EeiFfdx6SXot_Q" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6nKOaV89EeiFfdx6SXot_Q" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_6nKOal89EeiFfdx6SXot_Q" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6nKOa189EeiFfdx6SXot_Q" x="1" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_6nKObF89EeiFfdx6SXot_Q" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6nKObV89EeiFfdx6SXot_Q" x="2" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_6nKOZV89EeiFfdx6SXot_Q"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_6nKOZl89EeiFfdx6SXot_Q" fontName="Segoe UI" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6nKOZ189EeiFfdx6SXot_Q" points="[3, 0, 1, 78]$[3, -71, 1, 7]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6nKObl89EeiFfdx6SXot_Q" id="(0.45,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6nKOb189EeiFfdx6SXot_Q" id="(0.5,0.8)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_w5jmEFmqEei9xo18MnYllg" name="manue" tooltipText="Esto es un tío" incomingEdges="_0cKxMFmqEei9xo18MnYllg _6nAdYF89EeiFfdx6SXot_Q" width="4" height="4" resizeKind="NSEW">
+      <target xmi:type="family:Man" href="Family.family#//@members.0"/>
+      <semanticElements xmi:type="family:Man" href="Family.family#//@members.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_F59hsF8lEeie_IrsR-T5FA" labelSize="12" showIcon="false" labelColor="114,159,207" description="_nf4WYFmpEei9xo18MnYllg" workspacePath="/es.uca.mps.SANTIAGO_GODOY.family.edit/icons/full/obj16/Man.gif"/>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Persons%20diagram']/@additionalLayers[name='Men']/@nodeMappings[name='ManNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_3r_dwF89EeiFfdx6SXot_Q" name="miguel" tooltipText="Esto es un tío" outgoingEdges="_5inBIF89EeiFfdx6SXot_Q _6nAdYF89EeiFfdx6SXot_Q" width="4" height="4" resizeKind="NSEW">
+      <target xmi:type="family:Man" href="Family.family#//@members.3"/>
+      <semanticElements xmi:type="family:Man" href="Family.family#//@members.3"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_6nKOYF89EeiFfdx6SXot_Q" showIcon="false" workspacePath="/es.uca.mps.SANTIAGO_GODOY.family.edit/icons/full/obj16/Man.gif">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Persons%20diagram']/@additionalLayers[name='Men']/@nodeMappings[name='ManNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Persons%20diagram']/@additionalLayers[name='Men']/@nodeMappings[name='ManNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_0cF4sFmqEei9xo18MnYllg" name="Pepa" tooltipText="Esto es una tía" incomingEdges="_0cN0gFmqEei9xo18MnYllg _5inBIF89EeiFfdx6SXot_Q" width="4" height="4" resizeKind="NSEW">
+      <target xmi:type="family:Woman" href="Family.family#//@members.1"/>
+      <semanticElements xmi:type="family:Woman" href="Family.family#//@members.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_0cHG0FmqEei9xo18MnYllg" labelSize="12" showIcon="false" labelColor="246,139,139" description="_r73ZgFmpEei9xo18MnYllg" workspacePath="/es.uca.mps.SANTIAGO_GODOY.family.edit/icons/full/obj16/Woman.gif"/>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Persons%20diagram']/@additionalLayers[name='Women']/@nodeMappings[name='WomanNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_0cHt4FmqEei9xo18MnYllg" name="Wonder" tooltipText="Esto es una tía" outgoingEdges="_0cKxMFmqEei9xo18MnYllg _0cN0gFmqEei9xo18MnYllg" width="4" height="4" resizeKind="NSEW">
+      <target xmi:type="family:Woman" href="Family.family#//@members.2"/>
+      <semanticElements xmi:type="family:Woman" href="Family.family#//@members.2"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_0cI8AFmqEei9xo18MnYllg" showIcon="false" workspacePath="/es.uca.mps.SANTIAGO_GODOY.family.edit/icons/full/obj16/Woman.gif">
+        <description xmi:type="style:WorkspaceImageDescription" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Persons%20diagram']/@additionalLayers[name='Women']/@nodeMappings[name='WomanNode']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Persons%20diagram']/@additionalLayers[name='Women']/@nodeMappings[name='WomanNode']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_0cKxMFmqEei9xo18MnYllg" sourceNode="_0cHt4FmqEei9xo18MnYllg" targetNode="_w5jmEFmqEei9xo18MnYllg">
+      <target xmi:type="family:Woman" href="Family.family#//@members.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_0cLYQFmqEei9xo18MnYllg" lineStyle="dash" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Persons%20diagram']/@additionalLayers[name='Men']/@edgeMappings[name='fatherEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_0cLYQVmqEei9xo18MnYllg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Persons%20diagram']/@additionalLayers[name='Men']/@edgeMappings[name='fatherEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_0cN0gFmqEei9xo18MnYllg" sourceNode="_0cHt4FmqEei9xo18MnYllg" targetNode="_0cF4sFmqEei9xo18MnYllg">
+      <target xmi:type="family:Woman" href="Family.family#//@members.2"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_0cObkFmqEei9xo18MnYllg" lineStyle="dash" size="2" strokeColor="246,139,139">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Persons%20diagram']/@additionalLayers[name='Women']/@edgeMappings[name='motherEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_0cObkVmqEei9xo18MnYllg"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Persons%20diagram']/@additionalLayers[name='Women']/@edgeMappings[name='motherEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_5inBIF89EeiFfdx6SXot_Q" sourceNode="_3r_dwF89EeiFfdx6SXot_Q" targetNode="_0cF4sFmqEei9xo18MnYllg">
+      <target xmi:type="family:Man" href="Family.family#//@members.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_5iwyIF89EeiFfdx6SXot_Q" lineStyle="dash" size="2" strokeColor="246,139,139">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Persons%20diagram']/@additionalLayers[name='Women']/@edgeMappings[name='motherEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_5iwyIV89EeiFfdx6SXot_Q"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Persons%20diagram']/@additionalLayers[name='Women']/@edgeMappings[name='motherEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_6nAdYF89EeiFfdx6SXot_Q" sourceNode="_3r_dwF89EeiFfdx6SXot_Q" targetNode="_w5jmEFmqEei9xo18MnYllg">
+      <target xmi:type="family:Man" href="Family.family#//@members.3"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_6nAdYV89EeiFfdx6SXot_Q" lineStyle="dash" size="2" strokeColor="114,159,207">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Persons%20diagram']/@additionalLayers[name='Men']/@edgeMappings[name='fatherEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_6nAdYl89EeiFfdx6SXot_Q"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Persons%20diagram']/@additionalLayers[name='Men']/@edgeMappings[name='fatherEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Persons%20diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="__X0ruFmYEeioUvXurqMZQQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Persons%20diagram']/@defaultLayer"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Persons%20diagram']/@additionalLayers[name='Men']"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Persons%20diagram']/@additionalLayers[name='Women']"/>
+    <target xmi:type="family:Family" href="Family.family#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_V8_fsFmvEei9xo18MnYllg" name="Relations of Juaki" uid="_V8z5gFmvEei9xo18MnYllg">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_V8_fsVmvEei9xo18MnYllg" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_V8_fslmvEei9xo18MnYllg"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_V-KkYFmvEei9xo18MnYllg" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_V-KkYVmvEei9xo18MnYllg" type="Sirius" element="_V8_fsFmvEei9xo18MnYllg" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_g7zWoFmvEei9xo18MnYllg" type="2003" element="_g5wIMFmvEei9xo18MnYllg">
+          <children xmi:type="notation:Node" xmi:id="_g72Z8FmvEei9xo18MnYllg" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_g8GRkFmvEei9xo18MnYllg" type="7004">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_g8G4oFmvEei9xo18MnYllg"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_g8G4oVmvEei9xo18MnYllg"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_g7zWoVmvEei9xo18MnYllg" fontName="Segoe UI"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_g7zWolmvEei9xo18MnYllg" x="455" y="105" width="173" height="118"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_V-LLcFmvEei9xo18MnYllg"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_g5wIMFmvEei9xo18MnYllg" name="manue">
+      <target xmi:type="family:Man" href="Family.family#//@members.0"/>
+      <semanticElements xmi:type="family:Man" href="Family.family#//@members.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_mZJwIFmvEei9xo18MnYllg" labelSize="12" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Relationships%20diagram']/@defaultLayer/@containerMappings[name='PersonContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Relationships%20diagram']/@defaultLayer/@containerMappings[name='PersonContainer']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Relationships%20diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_V8_ftFmvEei9xo18MnYllg"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/es.uca.mps.SANTIAGO_GODOY.design/description/SANTIAGO_GODOY.odesign#//@ownedViewpoints[name='persons']/@ownedRepresentations[name='Relationships%20diagram']/@defaultLayer"/>
+    <target xmi:type="family:Man" href="Family.family#//@members.0"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

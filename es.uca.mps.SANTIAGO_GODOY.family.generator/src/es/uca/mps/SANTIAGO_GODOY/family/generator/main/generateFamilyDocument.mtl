@@ -1,0 +1,77 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generateFamilyDocument.
+ */]
+[module generateFamilyDocument('http://www.uca.es/mps/SANTIAGO_GODOY/family')]
+
+
+[**
+ * The documentation of the template generateFamilyLatex.
+ * @param aFamily
+ */]
+[template public generateFamilyLatex(aFamily : Family)]
+[comment @main/]
+[file (aFamily.name.concat('.lyx'), false, 'UTF-8')]
+\documentclass[ '[' /]a4paper,12pt[ ']' /]{article}
+\usepackage[ '[' /]utf8[ ']' /]{inputenc}
+\usepackage[ '[' /]english, spanish[ ']' /]{babel}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{geometry}
+
+
+\begin{document}
+\font\encabezado=cmr12 at 30pt
+\font\subtitulo=cmr12 at 12pt
+\font\titulo=cmr12 at 45pt
+\font\texto=cmr12 at 22pt
+
+\begin{titlepage}
+\raggedbottom
+\begin{center}
+\section*{\encabezado MINISTERIO DE JUSTICIA}
+\section*{\textbf{\subtitulo DIRECCION GENERAL DE LOS REGISTROS Y DEL NOTARIADO}\\ }
+
+\vspace*{90pt}
+\titulo Libro de la Familia
+
+\vspace*{40pt}
+\titulo [aFamily.name/]
+\end{center}
+\begin{figure}[ '[' /]ht[ ']' /]
+\vspace*{100pt}
+\noindent\fbox{%
+    \parbox{200pt}{%
+        No seran considerados ejemplares\\editados oficialmente los que no\\lleven el sello en seco del Ministerio\\de Justicia
+    }%
+}
+\end{figure}
+
+\begin{figure}[ '[' /]ht[ ']' /]
+\centering
+\vspace*{60pt}
+Modelo oficial aprobado \{BOE de 13 de septiembre de 1989\}\\
+EDICION 2005\\
+EJEMPLAR GRATUITO\\
+(Ley 25/1986, de 24 de diciembre)
+\end{figure}
+
+\end{titlepage}
+
+\clearpage
+[for(member: Person | aFamily.members)]
+\centering
+\titulo [member.name/]
+
+\linespread{2.0}
+\LARGE{Don/Donna [member.name/] nacido/a el [member.fechaNacimiento/] en [member.provincia/] hijo/a de [if (member.father.oclIsUndefined())]Paco[else][member.father.name/][/if]
+  y de [if (member.mother.oclIsUndefined())]Mariana[else][member.mother.name/][/if]. Estado civil [member.eCivil/]}
+\vspace*{10pt}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace*{10pt}
+[/for]
+\end{document}
+[/file]
+[/template]

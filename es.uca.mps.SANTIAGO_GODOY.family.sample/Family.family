@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<family:Family xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:family="http://www.uca.es/mps/SANTIAGO_GODOY/family" name="Serrano">
+  <members xsi:type="family:Man" name="manue" fechaNacimiento="14/06/1964" eCivil="Casado/a" provincia="Madrid"/>
+  <members xsi:type="family:Woman" name="Pepa" fechaNacimiento="22/01/1964" eCivil="Casado/a" provincia="Cadiz"/>
+  <members xsi:type="family:Woman" name="Wonder" father="//@members.0" mother="//@members.1" fechaNacimiento="20/09/1990" eCivil="Soltero/a" provincia="Cadiz"/>
+  <members xsi:type="family:Man" name="miguel" father="//@members.0" mother="//@members.1" fechaNacimiento="01/12/1996" eCivil="Soltero/a" provincia="Cadiz"/>
+</family:Family>

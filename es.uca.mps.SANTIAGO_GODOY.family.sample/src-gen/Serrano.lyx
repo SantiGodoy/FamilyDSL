@@ -1,0 +1,86 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english, spanish]{babel}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{geometry}
+
+
+\begin{document}
+\font\encabezado=cmr12 at 30pt
+\font\subtitulo=cmr12 at 12pt
+\font\titulo=cmr12 at 45pt
+\font\texto=cmr12 at 22pt
+
+\begin{titlepage}
+\raggedbottom
+\begin{center}
+\section*{\encabezado MINISTERIO DE JUSTICIA}
+\section*{\textbf{\subtitulo DIRECCION GENERAL DE LOS REGISTROS Y DEL NOTARIADO}\\ }
+
+\vspace*{90pt}
+\titulo Libro de la Familia
+
+\vspace*{40pt}
+\titulo Serrano
+\end{center}
+\begin{figure}[ht]
+\vspace*{100pt}
+\noindent\fbox{%
+    \parbox{200pt}{%
+        No seran considerados ejemplares\\editados oficialmente los que no\\lleven el sello en seco del Ministerio\\de Justicia
+    }%
+}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\vspace*{60pt}
+Modelo oficial aprobado \{BOE de 13 de septiembre de 1989\}\\
+EDICION 2005\\
+EJEMPLAR GRATUITO\\
+(Ley 25/1986, de 24 de diciembre)
+\end{figure}
+
+\end{titlepage}
+
+\clearpage
+\centering
+\titulo manue
+
+\linespread{2.0}
+\LARGE{Don/Donna manue nacido/a el 14/06/1964 en Madrid hijo/a de Paco
+  y de Mariana. Estado civil Casado/a}
+\vspace*{10pt}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace*{10pt}
+\centering
+\titulo Pepa
+
+\linespread{2.0}
+\LARGE{Don/Donna Pepa nacido/a el 22/01/1964 en Cadiz hijo/a de Paco
+  y de Mariana. Estado civil Casado/a}
+\vspace*{10pt}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace*{10pt}
+\centering
+\titulo Wonder
+
+\linespread{2.0}
+\LARGE{Don/Donna Wonder nacido/a el 20/09/1990 en Cadiz hijo/a de manue
+  y de Pepa. Estado civil Soltero/a}
+\vspace*{10pt}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace*{10pt}
+\centering
+\titulo miguel
+
+\linespread{2.0}
+\LARGE{Don/Donna miguel nacido/a el 01/12/1996 en Cadiz hijo/a de manue
+  y de Pepa. Estado civil Soltero/a}
+\vspace*{10pt}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace*{10pt}
+\end{document}

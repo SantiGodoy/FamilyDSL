@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
+  <mtl:Module name="generateFamilyDocument" nsURI="es::uca::mps::SANTIAGO_GODOY::family::generator::main::generateFamilyDocument" startHeaderPosition="97" endHeaderPosition="260">
+    <documentation xsi:type="mtl:ModuleDocumentation">
+      <body startPosition="32" endPosition="94" value="&#xD;&#xA;The documentation of the module generateFamilyDocument.&#xD;&#xA;&#xD;&#xA;"/>
+    </documentation>
+    <input>
+      <takesTypesFrom href="http://www.uca.es/mps/SANTIAGO_GODOY/family#/"/>
+    </input>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateFamilyLatex" visibility="Public" main="true">
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="\documentclass"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="[">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="a4paper,12pt"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="]">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="{article}&#xA;\usepackage"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="[">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="utf8"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="]">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="{inputenc}&#xA;\usepackage"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="[">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="english, spanish"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="]">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="{babel}&#xA;\usepackage{graphicx}&#xA;\usepackage{tabularx}&#xA;\usepackage{float}&#xA;\usepackage{hyperref}&#xA;\usepackage{geometry}&#xA;&#xA;&#xA;\begin{document}&#xA;\font\encabezado=cmr12 at 30pt&#xA;\font\subtitulo=cmr12 at 12pt&#xA;\font\titulo=cmr12 at 45pt&#xA;\font\texto=cmr12 at 22pt&#xA;&#xA;\begin{titlepage}&#xA;\raggedbottom&#xA;\begin{center}&#xA;\section*{\encabezado MINISTERIO DE JUSTICIA}&#xA;\section*{\textbf{\subtitulo DIRECCION GENERAL DE LOS REGISTROS Y DEL NOTARIADO}\\ }&#xA;&#xA;\vspace*{90pt}&#xA;\titulo Libro de la Familia&#xA;&#xA;\vspace*{40pt}&#xA;\titulo "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aFamily" referredVariable="/0/generateFamilyLatex/aFamily">
+            <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;\end{center}&#xA;\begin{figure}"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="[">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="ht"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="]">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;\vspace*{100pt}&#xA;\noindent\fbox{%&#xA;    \parbox{200pt}{%&#xA;        No seran considerados ejemplares\\editados oficialmente los que no\\lleven el sello en seco del Ministerio\\de Justicia&#xA;    }%&#xA;}&#xA;\end{figure}&#xA;&#xA;\begin{figure}"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="[">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="ht"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="]">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;\centering&#xA;\vspace*{60pt}&#xA;Modelo oficial aprobado \{BOE de 13 de septiembre de 1989\}\\&#xA;EDICION 2005\\&#xA;EJEMPLAR GRATUITO\\&#xA;(Ley 25/1986, de 24 de diciembre)&#xA;\end{figure}&#xA;&#xA;\end{titlepage}&#xA;&#xA;\clearpage&#xA;"/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="\centering&#xA;\titulo "/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="member" referredVariable="/0/generateFamilyLatex/%/%.23/member">
+              <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person/name"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#xA;\linespread{2.0}&#xA;\LARGE{Don/Donna "/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="member" referredVariable="/0/generateFamilyLatex/%/%.23/member">
+              <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person/name"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" nacido/a el "/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="member" referredVariable="/0/generateFamilyLatex/%/%.23/member">
+              <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person/fechaNacimiento"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" en "/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="member" referredVariable="/0/generateFamilyLatex/%/%.23/member">
+              <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person/provincia"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" hijo/a de "/>
+          <body xsi:type="mtl:IfBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="Paco"/>
+            <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Man"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="member" referredVariable="/0/generateFamilyLatex/%/%.23/member">
+                  <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person"/>
+                </source>
+                <referredProperty xsi:type="ecore:EReference" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person/father"/>
+              </source>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclIsUndefined"/>
+            </ifExpr>
+            <else>
+              <body xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Man"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="member" referredVariable="/0/generateFamilyLatex/%/%.23/member">
+                    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EReference" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person/father"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person/name"/>
+              </body>
+            </else>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;  y de "/>
+          <body xsi:type="mtl:IfBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="Mariana"/>
+            <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+              <source xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Woman"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="member" referredVariable="/0/generateFamilyLatex/%/%.23/member">
+                  <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person"/>
+                </source>
+                <referredProperty xsi:type="ecore:EReference" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person/mother"/>
+              </source>
+              <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclIsUndefined"/>
+            </ifExpr>
+            <else>
+              <body xsi:type="ocl.ecore:PropertyCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+                <source xsi:type="ocl.ecore:PropertyCallExp">
+                  <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Woman"/>
+                  <source xsi:type="ocl.ecore:VariableExp" name="member" referredVariable="/0/generateFamilyLatex/%/%.23/member">
+                    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person"/>
+                  </source>
+                  <referredProperty xsi:type="ecore:EReference" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person/mother"/>
+                </source>
+                <referredProperty xsi:type="ecore:EAttribute" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person/name"/>
+              </body>
+            </else>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=". Estado civil "/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="member" referredVariable="/0/generateFamilyLatex/%/%.23/member">
+              <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person/eCivil"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="}&#xA;\vspace*{10pt}&#xA;\noindent\rule{\textwidth}{0.4pt}&#xA;\vspace*{10pt}&#xA;"/>
+          <loopVariable name="member">
+            <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/19/OrderedSet(Person)">
+            <source xsi:type="ocl.ecore:VariableExp" name="aFamily" referredVariable="/0/generateFamilyLatex/aFamily">
+              <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family/members"/>
+          </iterSet>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="\end{document}&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="aFamily" referredVariable="/0/generateFamilyLatex/aFamily">
+              <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family/name"/>
+          </source>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".lyx">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/concat"/>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="181" endPosition="260" value="&#xD;&#xA;The documentation of the template generateFamilyLatex.&#xD;&#xA;@param aFamily&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="aFamily">
+          <body value=""/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="aFamily">
+        <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+      </parameter>
+    </ownedModuleElement>
+  </mtl:Module>
+  <ecore:EPackage name="additions">
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_String_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Integer_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Real_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Real"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ecore_EObject_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </eAnnotations>
+      <eOperations name="generateFamilyLatex">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateFamilyLatex"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="aFamily">
+          <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_OclAny_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Collection(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_Sequence(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="oclstdlib_OrderedSet(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="family_Family_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+      </eAnnotations>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+  </ocl.ecore:Variable>
+  <ecore:EPackage name="collections">
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(Person)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person"/>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Person"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.uca.es/mps/SANTIAGO_GODOY/family#//Family"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ecore:EAnnotation source="positions">
+    <eAnnotations source="positions.0" references="/0/%">
+      <details key="start" value="29"/>
+      <details key="end" value="96"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.1" references="/0/generateFamilyLatex">
+      <details key="start" value="263"/>
+      <details key="end" value="2010"/>
+      <details key="line" value="12"/>
+    </eAnnotations>
+    <eAnnotations source="positions.2" references="/0/generateFamilyLatex/%">
+      <details key="start" value="336"/>
+      <details key="end" value="1998"/>
+      <details key="line" value="14"/>
+    </eAnnotations>
+    <eAnnotations source="positions.3" references="/0/generateFamilyLatex/%/%">
+      <details key="start" value="389"/>
+      <details key="end" value="403"/>
+      <details key="line" value="15"/>
+    </eAnnotations>
+    <eAnnotations source="positions.4" references="/0/generateFamilyLatex/%/%.1">
+      <details key="start" value="405"/>
+      <details key="end" value="408"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.5" references="/0/generateFamilyLatex/%/%.2">
+      <details key="start" value="411"/>
+      <details key="end" value="423"/>
+      <details key="line" value="15"/>
+    </eAnnotations>
+    <eAnnotations source="positions.6" references="/0/generateFamilyLatex/%/%.3">
+      <details key="start" value="425"/>
+      <details key="end" value="428"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.7" references="/0/generateFamilyLatex/%/%.4">
+      <details key="start" value="431"/>
+      <details key="end" value="452"/>
+      <details key="line" value="15"/>
+    </eAnnotations>
+    <eAnnotations source="positions.8" references="/0/generateFamilyLatex/%/%.5">
+      <details key="start" value="454"/>
+      <details key="end" value="457"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.9" references="/0/generateFamilyLatex/%/%.6">
+      <details key="start" value="460"/>
+      <details key="end" value="464"/>
+      <details key="line" value="16"/>
+    </eAnnotations>
+    <eAnnotations source="positions.10" references="/0/generateFamilyLatex/%/%.7">
+      <details key="start" value="466"/>
+      <details key="end" value="469"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.11" references="/0/generateFamilyLatex/%/%.8">
+      <details key="start" value="472"/>
+      <details key="end" value="494"/>
+      <details key="line" value="16"/>
+    </eAnnotations>
+    <eAnnotations source="positions.12" references="/0/generateFamilyLatex/%/%.9">
+      <details key="start" value="496"/>
+      <details key="end" value="499"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.13" references="/0/generateFamilyLatex/%/%.10">
+      <details key="start" value="502"/>
+      <details key="end" value="518"/>
+      <details key="line" value="17"/>
+    </eAnnotations>
+    <eAnnotations source="positions.14" references="/0/generateFamilyLatex/%/%.11">
+      <details key="start" value="520"/>
+      <details key="end" value="523"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.15" references="/0/generateFamilyLatex/%/%.12">
+      <details key="start" value="526"/>
+      <details key="end" value="1021"/>
+      <details key="line" value="17"/>
+    </eAnnotations>
+    <eAnnotations source="positions.16" references="/0/generateFamilyLatex/%/%.13">
+      <details key="start" value="1022"/>
+      <details key="end" value="1034"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/generateFamilyLatex/%/%.13/aFamily">
+      <details key="start" value="1022"/>
+      <details key="end" value="1029"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.18" references="/0/generateFamilyLatex/%/%.14">
+      <details key="start" value="1036"/>
+      <details key="end" value="1064"/>
+      <details key="line" value="42"/>
+    </eAnnotations>
+    <eAnnotations source="positions.19" references="/0/generateFamilyLatex/%/%.15">
+      <details key="start" value="1066"/>
+      <details key="end" value="1069"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.20" references="/0/generateFamilyLatex/%/%.16">
+      <details key="start" value="1072"/>
+      <details key="end" value="1074"/>
+      <details key="line" value="43"/>
+    </eAnnotations>
+    <eAnnotations source="positions.21" references="/0/generateFamilyLatex/%/%.17">
+      <details key="start" value="1076"/>
+      <details key="end" value="1079"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.22" references="/0/generateFamilyLatex/%/%.18">
+      <details key="start" value="1082"/>
+      <details key="end" value="1302"/>
+      <details key="line" value="44"/>
+    </eAnnotations>
+    <eAnnotations source="positions.23" references="/0/generateFamilyLatex/%/%.19">
+      <details key="start" value="1304"/>
+      <details key="end" value="1307"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.24" references="/0/generateFamilyLatex/%/%.20">
+      <details key="start" value="1310"/>
+      <details key="end" value="1312"/>
+      <details key="line" value="52"/>
+    </eAnnotations>
+    <eAnnotations source="positions.25" references="/0/generateFamilyLatex/%/%.21">
+      <details key="start" value="1314"/>
+      <details key="end" value="1317"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.26" references="/0/generateFamilyLatex/%/%.22">
+      <details key="start" value="1320"/>
+      <details key="end" value="1520"/>
+      <details key="line" value="53"/>
+    </eAnnotations>
+    <eAnnotations source="positions.27" references="/0/generateFamilyLatex/%/%.23">
+      <details key="start" value="1520"/>
+      <details key="end" value="1975"/>
+      <details key="line" value="64"/>
+    </eAnnotations>
+    <eAnnotations source="positions.28" references="/0/generateFamilyLatex/%/%.23/%">
+      <details key="start" value="1560"/>
+      <details key="end" value="1579"/>
+      <details key="line" value="65"/>
+    </eAnnotations>
+    <eAnnotations source="positions.29" references="/0/generateFamilyLatex/%/%.23/%.1">
+      <details key="start" value="1580"/>
+      <details key="end" value="1591"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.30" references="/0/generateFamilyLatex/%/%.23/%.1/member">
+      <details key="start" value="1580"/>
+      <details key="end" value="1586"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.31" references="/0/generateFamilyLatex/%/%.23/%.2">
+      <details key="start" value="1593"/>
+      <details key="end" value="1629"/>
+      <details key="line" value="67"/>
+    </eAnnotations>
+    <eAnnotations source="positions.32" references="/0/generateFamilyLatex/%/%.23/%.3">
+      <details key="start" value="1630"/>
+      <details key="end" value="1641"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.33" references="/0/generateFamilyLatex/%/%.23/%.3/member">
+      <details key="start" value="1630"/>
+      <details key="end" value="1636"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.34" references="/0/generateFamilyLatex/%/%.23/%.4">
+      <details key="start" value="1643"/>
+      <details key="end" value="1656"/>
+      <details key="line" value="69"/>
+    </eAnnotations>
+    <eAnnotations source="positions.35" references="/0/generateFamilyLatex/%/%.23/%.5">
+      <details key="start" value="1657"/>
+      <details key="end" value="1679"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.36" references="/0/generateFamilyLatex/%/%.23/%.5/member">
+      <details key="start" value="1657"/>
+      <details key="end" value="1663"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.37" references="/0/generateFamilyLatex/%/%.23/%.6">
+      <details key="start" value="1681"/>
+      <details key="end" value="1685"/>
+      <details key="line" value="69"/>
+    </eAnnotations>
+    <eAnnotations source="positions.38" references="/0/generateFamilyLatex/%/%.23/%.7">
+      <details key="start" value="1686"/>
+      <details key="end" value="1702"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.39" references="/0/generateFamilyLatex/%/%.23/%.7/member">
+      <details key="start" value="1686"/>
+      <details key="end" value="1692"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.40" references="/0/generateFamilyLatex/%/%.23/%.8">
+      <details key="start" value="1704"/>
+      <details key="end" value="1715"/>
+      <details key="line" value="69"/>
+    </eAnnotations>
+    <eAnnotations source="positions.41" references="/0/generateFamilyLatex/%/%.23/%.9">
+      <details key="start" value="1715"/>
+      <details key="end" value="1788"/>
+      <details key="line" value="69"/>
+    </eAnnotations>
+    <eAnnotations source="positions.42" references="/0/generateFamilyLatex/%/%.23/%.9/%">
+      <details key="start" value="1752"/>
+      <details key="end" value="1756"/>
+      <details key="line" value="69"/>
+    </eAnnotations>
+    <eAnnotations source="positions.43" references="/0/generateFamilyLatex/%/%.23/%.9/%.1">
+      <details key="start" value="1719"/>
+      <details key="end" value="1751"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.44" references="/0/generateFamilyLatex/%/%.23/%.9/%.1/%">
+      <details key="start" value="1720"/>
+      <details key="end" value="1733"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.45" references="/0/generateFamilyLatex/%/%.23/%.9/%.1/%/member">
+      <details key="start" value="1720"/>
+      <details key="end" value="1726"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.46" references="/0/generateFamilyLatex/%/%.23/%.9/%.2">
+      <details key="start" value="1756"/>
+      <details key="end" value="1783"/>
+      <details key="line" value="69"/>
+    </eAnnotations>
+    <eAnnotations source="positions.47" references="/0/generateFamilyLatex/%/%.23/%.9/%.2/%">
+      <details key="start" value="1763"/>
+      <details key="end" value="1781"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.48" references="/0/generateFamilyLatex/%/%.23/%.9/%.2/%/%">
+      <details key="start" value="1763"/>
+      <details key="end" value="1776"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.49" references="/0/generateFamilyLatex/%/%.23/%.9/%.2/%/%/member">
+      <details key="start" value="1763"/>
+      <details key="end" value="1769"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.50" references="/0/generateFamilyLatex/%/%.23/%.10">
+      <details key="start" value="1788"/>
+      <details key="end" value="1796"/>
+      <details key="line" value="70"/>
+    </eAnnotations>
+    <eAnnotations source="positions.51" references="/0/generateFamilyLatex/%/%.23/%.11">
+      <details key="start" value="1796"/>
+      <details key="end" value="1872"/>
+      <details key="line" value="70"/>
+    </eAnnotations>
+    <eAnnotations source="positions.52" references="/0/generateFamilyLatex/%/%.23/%.11/%">
+      <details key="start" value="1833"/>
+      <details key="end" value="1840"/>
+      <details key="line" value="70"/>
+    </eAnnotations>
+    <eAnnotations source="positions.53" references="/0/generateFamilyLatex/%/%.23/%.11/%.1">
+      <details key="start" value="1800"/>
+      <details key="end" value="1832"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.54" references="/0/generateFamilyLatex/%/%.23/%.11/%.1/%">
+      <details key="start" value="1801"/>
+      <details key="end" value="1814"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.55" references="/0/generateFamilyLatex/%/%.23/%.11/%.1/%/member">
+      <details key="start" value="1801"/>
+      <details key="end" value="1807"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.56" references="/0/generateFamilyLatex/%/%.23/%.11/%.2">
+      <details key="start" value="1840"/>
+      <details key="end" value="1867"/>
+      <details key="line" value="70"/>
+    </eAnnotations>
+    <eAnnotations source="positions.57" references="/0/generateFamilyLatex/%/%.23/%.11/%.2/%">
+      <details key="start" value="1847"/>
+      <details key="end" value="1865"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.58" references="/0/generateFamilyLatex/%/%.23/%.11/%.2/%/%">
+      <details key="start" value="1847"/>
+      <details key="end" value="1860"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.59" references="/0/generateFamilyLatex/%/%.23/%.11/%.2/%/%/member">
+      <details key="start" value="1847"/>
+      <details key="end" value="1853"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.60" references="/0/generateFamilyLatex/%/%.23/%.12">
+      <details key="start" value="1872"/>
+      <details key="end" value="1887"/>
+      <details key="line" value="70"/>
+    </eAnnotations>
+    <eAnnotations source="positions.61" references="/0/generateFamilyLatex/%/%.23/%.13">
+      <details key="start" value="1888"/>
+      <details key="end" value="1901"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.62" references="/0/generateFamilyLatex/%/%.23/%.13/member">
+      <details key="start" value="1888"/>
+      <details key="end" value="1894"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.63" references="/0/generateFamilyLatex/%/%.23/%.14">
+      <details key="start" value="1903"/>
+      <details key="end" value="1969"/>
+      <details key="line" value="70"/>
+    </eAnnotations>
+    <eAnnotations source="positions.64" references="/0/generateFamilyLatex/%/%.23/member">
+      <details key="start" value="1525"/>
+      <details key="end" value="1539"/>
+      <details key="line" value="64"/>
+    </eAnnotations>
+    <eAnnotations source="positions.65" references="/0/generateFamilyLatex/%/%.23/%.15">
+      <details key="start" value="1542"/>
+      <details key="end" value="1557"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.66" references="/0/generateFamilyLatex/%/%.23/%.15/aFamily">
+      <details key="start" value="1542"/>
+      <details key="end" value="1549"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.67" references="/0/generateFamilyLatex/%/%.24">
+      <details key="start" value="1976"/>
+      <details key="end" value="1991"/>
+      <details key="line" value="75"/>
+    </eAnnotations>
+    <eAnnotations source="positions.68" references="/0/generateFamilyLatex/%/%.25">
+      <details key="start" value="343"/>
+      <details key="end" value="370"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.69" references="/0/generateFamilyLatex/%/%.25/%">
+      <details key="start" value="343"/>
+      <details key="end" value="355"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.70" references="/0/generateFamilyLatex/%/%.25/%/aFamily">
+      <details key="start" value="343"/>
+      <details key="end" value="350"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.71" references="/0/generateFamilyLatex/%/%.25/%.1">
+      <details key="start" value="363"/>
+      <details key="end" value="369"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.72" references="/0/generateFamilyLatex/%/%.26">
+      <details key="start" value="379"/>
+      <details key="end" value="386"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.73" references="/0/generateFamilyLatex/%.1">
+      <details key="start" value="178"/>
+      <details key="end" value="262"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.74" references="/0/generateFamilyLatex/%.1/aFamily">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.75" references="/0/generateFamilyLatex/aFamily">
+      <details key="start" value="300"/>
+      <details key="end" value="316"/>
+      <details key="line" value="12"/>
+    </eAnnotations>
+  </ecore:EAnnotation>
+</xmi:XMI>
